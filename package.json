@@ -1,0 +1,19 @@
+{
+  "name": "NodeJabue",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Chris Yang <ybagyang@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "jsonwebtoken": "*",
+    "password-hash": "*"
+  }
+}
