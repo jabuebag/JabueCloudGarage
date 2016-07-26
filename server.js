@@ -9,6 +9,7 @@ var authMiddleware = require('./Utility/AuthUtility');
 var indexController = require('./Controller/IndexController');
 var userController = require('./Controller/UserController');
 var authController = require('./Controller/AuthController');
+var mapController = require('./Controller/MapController');
 
 // App
 var app = express();
@@ -28,6 +29,7 @@ authMiddleware.authMiddleware(app, router);
 app.use('/', indexController);
 app.use('/user', userController);
 app.use('/auth', authController);
+app.use('/map', mapController);
 
 app.listen(systemConfig.port);
 console.log('Server is on.');

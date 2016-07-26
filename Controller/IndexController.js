@@ -16,6 +16,10 @@ router.get('/', function (req, res, next) {
             {
                 api: '/auth',
                 describe: 'All auth APIS, go to /auth to see detail instructions.'
+            },
+            {
+                api: '/map',
+                describe: 'All map APIS, go to /map to see detail instructions.'
             }
         ]
     });
